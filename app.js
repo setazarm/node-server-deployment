@@ -11,7 +11,7 @@ const PORT= process.env.PORT || 4000
 
 
 app.get("/",(req,res)=>{
-    res.send(process.env.SECRET_KEY)
+    res.send("<h1>Hello Render</h1>")
 })
 app.get("/weather",async(req,res)=>{
     //proxy server
